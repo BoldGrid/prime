@@ -13,7 +13,7 @@
  * @see 	    https://docs.woocommerce.com/document/template-structure/
  * @author 		WooThemes
  * @package 	WooCommerce/Templates
- * @version     1.6.4
+ * @version     3.3.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -25,7 +25,7 @@ if ( ! $messages ){
 }
 
 ?>
-<div class="alert alert-danger alert-white rounded">
+<div class="alert alert-danger alert-white rounded" role="alert">
 	<button type="button" data-dismiss="alert" aria-hidden="true" class="close">×</button>
 	<div class="icon">
 		<i class="fa fa-times-circle"></i>

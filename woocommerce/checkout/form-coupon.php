@@ -13,7 +13,7 @@
  * @see     https://docs.woocommerce.com/document/template-structure/
  * @author  WooThemes
  * @package WooCommerce/Templates
- * @version 2.2
+ * @version 3.3.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -37,7 +37,7 @@ if ( empty( WC()->cart->applied_coupons ) ) {
 	</p>
 
 	<p class="form-row form-row-last">
-		<input type="submit" class="btn button-primary" name="apply_coupon" value="<?php esc_attr_e( 'Apply Coupon', 'woocommerce' ); ?>" />
+		<input type="submit" class="btn button-primary" name="apply_coupon" value="<?php esc_attr_e( 'Apply Coupon', 'woocommerce' ); ?>" /><?php esc_html_e( 'Apply coupon', 'woocommerce' ); ?>
 	</p>
 
 	<div class="clear"></div>

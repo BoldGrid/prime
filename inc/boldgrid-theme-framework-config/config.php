@@ -57,19 +57,74 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 		// Default Colors.
 		$boldgrid_framework_configs['customizer-options']['colors']['defaults'] = array(
 			array(
-				'default' => true,
-				'format' => 'palette-primary',
-				'neutral-color' => '#ffffff',
-				'colors' => array(
-					'#f95b26',
-					'#1a1a1a',
-					'#efefef',
-					'#efefef',
-					'#ffffff'
-				),
+			'default' => true,
+			'format' => 'palette-primary',
+			'neutral-color' => '#ffffff',
+			'colors' => array(
+				'#f95b26',
+				'#1a1a1a',
+				'#efefef',
+				'#fff7bd',
+				'#ffffff',
 			),
-		);
+		),
+		array(
+			'format' => 'palette-primary',
+			'neutral-color' => '#ffffff',
+			'colors' => array(
+				'#4392f1',
+				'#1a1a1a',
+				'#e8e9eb',
+				'#ff5e5b',
+				'#ffffff',
+			),
+		),		
+		array(
+			'format' => 'palette-primary',
+			'neutral-color' => '#6b6570',
+			'colors' => array(
+				'#b7f0ad',
+				'#ffffff',
+				'#4a314d',
+				'#f0add9',
+				'#6b6570',
+			),
+		),
+		array(
+			'format' => 'palette-primary',
+			'neutral-color' => '#333333',
+			'colors' => array(
+				'#e1d89f',
+				'#ffffff',
+				'#494949',
+				'#f07e13',
+				'#333333',
+			),
+		),		
+		array(
+			'format' => 'palette-primary',
+			'neutral-color' => '#f1faee',
+			'colors' => array(
+				'#e3170a',
+				'#1a1a1a',
+				'#e3e4db',
+				'#01baef',
+				'#f1faee',
+			),
+		),	
+	);
 
+		// Text Contrast Colors.
+		$boldgrid_framework_configs['customizer-options']['colors']['light_text'] = '#ffffff';
+		$boldgrid_framework_configs['customizer-options']['colors']['dark_text'] = '#333333';
+		
+		// Button Classes
+		$boldgrid_framework_configs['components']['buttons']['variables']['button-primary-classes'] = '.btn, .btn-color-1, .btn-pill';
+		$boldgrid_framework_configs['components']['buttons']['variables']['button-secondary-classes'] = '.btn, .btn-color-2, .btn-pill';
+	
+		// Social Icons.
+		$boldgrid_framework_configs['social-icons']['size'] = 'large';	
+		
 		// Add container to header.
 		$boldgrid_framework_configs['template']['header'] = 'container';
 

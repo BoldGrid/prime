@@ -2,5 +2,43 @@
 # Palettes
 ------------------------------------------------------------------------*/
 .palette-primary {
-	// Any custom color palette code goes here.
+	background: $palette-primary_neutral-color;
+	color: $text-contrast-palette-primary_neutral-color;
+
+	/*-----------------------------------------------
+	## 1
+	-----------------------------------------------*/
+	a,
+	.sm-clean ul a,
+	.sm-clean a.current,
+	.sm-clean a.highlighted,
+	.sm-clean a:active,
+	.sm-clean a:focus,
+	.sm-clean a:hover {
+		color: $palette-primary_1;
+	}
+	.sm-clean ul {
+		background: $text-contrast-palette-primary_1;
+	}
+	.sm-clean ul a.highlighted,
+	.sm-clean ul a:active,
+	.sm-clean ul a:focus,
+	.sm-clean ul a:hover {
+		background: $palette-primary_1;
+		color: $text-contrast-palette-primary_1;
+	}
+	.sm-clean a span.sub-arrow {
+		border-color: $palette-primary_1 transparent transparent;
+	}
+	.social-menu ul li a:hover,
+	.social-menu ul li a:focus {
+		color: rgba($palette-primary_1, 0.80);
+	}
+	
+	/*-----------------------------------------------
+	## Neutral
+	-----------------------------------------------*/
+	h1.entry-title > a {
+		color: $text-contrast-palette-primary_neutral-color;
 }
+	

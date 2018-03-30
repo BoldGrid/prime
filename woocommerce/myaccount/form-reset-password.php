@@ -13,7 +13,7 @@
  * @see     https://docs.woocommerce.com/document/template-structure/
  * @author  WooThemes
  * @package WooCommerce/Templates
- * @version 3.0.0
+ * @version 3.3.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -24,14 +24,14 @@ wc_print_notices(); ?>
 
 <form method="post" class="woocommerce-ResetPassword lost_reset_password">
 
-	<p><?php echo apply_filters( 'woocommerce_reset_password_message', __( 'Enter a new password below.', 'woocommerce') ); ?></p>
+	<p><?php echo apply_filters( 'woocommerce_reset_password_message', esc_html__( 'Enter a new password below.', 'woocommerce') ); ?></p>
 
 	<p class="form-group">
-		<label for="password_1"><?php _e( 'New password', 'woocommerce' ); ?> <span class="required">*</span></label>
+		<label for="password_1"><?php esc_html_e( 'New password', 'woocommerce' ); ?> <span class="required">*</span></label>
 		<input type="password" class="form-control" name="password_1" id="password_1" />
 	</p>
 	<p class="form-group">
-		<label for="password_2"><?php _e( 'Re-enter new password', 'woocommerce' ); ?> <span class="required">*</span></label>
+		<label for="password_2"><?php esc_html_e( 'Re-enter new password', 'woocommerce' ); ?> <span class="required">*</span></label>
 		<input type="password" class="form-control" name="password_2" id="password_2" />
 	</p>
 
@@ -44,7 +44,7 @@ wc_print_notices(); ?>
 
 	<p class="woocommerce-form-row form-row">
 		<input type="hidden" name="wc_reset_password" value="true" />
-		<input type="submit" class="btn button-primary" value="<?php esc_attr_e( 'Save', 'woocommerce' ); ?>" />
+		<input type="submit" class="btn button-primary" value="<?php esc_attr_e( 'Save', 'woocommerce' ); ?>" /><?php esc_html_e( 'Save', 'woocommerce' ); ?>
 	</p>
 
 	<?php wp_nonce_field( 'reset_password' ); ?>

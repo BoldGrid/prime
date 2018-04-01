@@ -40,5 +40,15 @@
 	-----------------------------------------------*/
 	h1.entry-title > a {
 		color: $text-contrast-palette-primary_neutral-color;
+	}
+
+	/*-----------------------------------------------
+	## WooCommerce
+	-----------------------------------------------*/
+	#reviews #comments ol.commentlist li .meta {
+		color: $palette-primary_1;
+	}
+	#reviews #comments ol.commentlist li .comment-text {
+		border: 1px solid $palette-primary_1;
+	}
 }
-	

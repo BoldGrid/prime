@@ -21,7 +21,7 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, rtl-language-
 }
 
 /*-----------------------------------------------
-# Titles
+# Page Content
 -----------------------------------------------*/
 h1.entry-title {
 	margin-top: 50px;
@@ -29,6 +29,10 @@ h1.entry-title {
 }
 h1.entry-title > a {
 	text-decoration: none;
+}
+.panel {
+	background-color: transparent;
+	box-shadow: none;
 }
 
 /*-----------------------------------------------

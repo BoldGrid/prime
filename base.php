@@ -33,11 +33,9 @@ $configs = $boldgrid_theme_framework->get_configs();
 		</div><!-- /.content -->
 		<?php do_action( 'boldgrid_content_after' ); ?>
 		<?php do_action( 'boldgrid_footer_before' ); ?>
-		<div class="site-footer">
-			<?php do_action( 'get_footer' ); ?>
-			<?php get_template_part( 'templates/footer/footer', $configs['template']['footer'] ); ?>
-			<?php wp_footer(); ?>
-		</div>
+		<?php do_action( 'get_footer' ); ?>
+		<?php get_template_part( 'templates/footer/footer', $configs['template']['footer'] ); ?>
+		<?php wp_footer(); ?>
 		<?php do_action( 'boldgrid_footer_after' ); ?>
 	</body>
 </html>

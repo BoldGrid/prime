@@ -24,12 +24,14 @@ $configs = $boldgrid_theme_framework->get_configs();
 		<?php do_action( 'boldgrid_header_after' ); ?>
 		<?php do_action( 'boldgrid_content_before' ); ?>
 		<div id="content" class="site-content" role="document">
-				<main class="main">
-					<?php include Boldgrid_Framework_Wrapper::boldgrid_template_path(); ?>
-				</main><!-- /.main -->
-				<?php if ( BoldGrid::display_sidebar( ) ) : ?>
-						<?php include BoldGrid::boldgrid_sidebar_path(); ?>
-				<?php endif; ?>
+			<main class="main">
+				<?php do_action( 'boldgrid_main_top' ); ?>
+				<?php include Boldgrid_Framework_Wrapper::boldgrid_template_path(); ?>
+				<?php do_action( 'boldgrid_main_bottom' ); ?>
+			</main><!-- /.main -->
+			<?php if ( BoldGrid::display_sidebar( ) ) : ?>
+				<?php include BoldGrid::boldgrid_sidebar_path(); ?>
+			<?php endif; ?>
 		</div><!-- /.content -->
 		<?php do_action( 'boldgrid_content_after' ); ?>
 		<?php do_action( 'boldgrid_footer_before' ); ?>

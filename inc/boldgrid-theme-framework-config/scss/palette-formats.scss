@@ -2,5 +2,9 @@
 # Palettes
 ------------------------------------------------------------------------*/
 .palette-primary {
-	// Any custom color palette code goes here.
+	.nav > li > a:focus,
+	.nav > li > a:hover {
+		background-color: $palette-primary_1;
+		color: $text-contrast-palette-primary_1;
+	}
 }

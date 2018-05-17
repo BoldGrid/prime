@@ -11,33 +11,32 @@
  * the readme will list any important changes.
  *
  * @see     https://docs.woocommerce.com/document/template-structure/
- * @author  WooThemes
  * @package WooCommerce/Templates
- * @version 3.3.0
+ * @version 3.4.0
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly
-}
+defined( 'ABSPATH' ) || exit;
 
-if ( ! wc_coupons_enabled() ) {
+if ( ! wc_coupons_enabled() || ! empty( WC()->cart->applied_coupons ) ) {
 	return;
 }
 
-if ( empty( WC()->cart->applied_coupons ) ) {
-	$info_message = apply_filters( 'woocommerce_checkout_coupon_message', __( 'Have a coupon?', 'woocommerce' ) . ' <a href="#" class="showcoupon">' . __( 'Click here to enter your code', 'woocommerce' ) . '</a>' );
-	wc_print_notice( $info_message, 'notice' );
-}
 ?>
 
-<form class="color1-border-color checkout_coupon" method="post" style="display:none">
+<div class="woocommerce-form-coupon-toggle">
+	<?php wc_print_notice( apply_filters( 'woocommerce_checkout_coupon_message', __( 'Have a coupon?', 'woocommerce' ) . ' <a href="#" class="showcoupon">' . __( 'Click here to enter your code', 'woocommerce' ) . '</a>' ), 'notice' ); ?>
+</div>
+
+<form class="color1-border-color checkout_coupon woocommerce-form-coupon" method="post" style="display:none">
+
+	<p><?php esc_html_e( 'If you have a coupon code, please apply it below.', 'woocommerce' ); ?></p>
 
 	<p class="form-row form-row-first form-group">
-		<input type="text" name="coupon_code" placeholder="<?php esc_attr_e( 'Coupon code', 'woocommerce' ); ?>" class="input-text form-control input-lg" id="coupon_code" value="" />
+		<input type="text" name="coupon_code" class="input-text form-control input-lg" placeholder="<?php esc_attr_e( 'Coupon code', 'woocommerce' ); ?>" id="coupon_code" value="" />
 	</p>
 
 	<p class="form-row form-row-last">
-		<input type="submit" class="btn button-primary" name="apply_coupon" value="<?php esc_attr_e( 'Apply Coupon', 'woocommerce' ); ?>" /><?php esc_html_e( 'Apply coupon', 'woocommerce' ); ?>
+		<button type="submit" class="btn button-primary" name="apply_coupon" value="<?php esc_attr_e( 'Apply coupon', 'woocommerce' ); ?>"><?php esc_html_e( 'Apply coupon', 'woocommerce' ); ?></button>
 	</p>
 
 	<div class="clear"></div>

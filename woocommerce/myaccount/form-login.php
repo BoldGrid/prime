@@ -11,14 +11,14 @@
  * the readme will list any important changes.
  *
  * @see     https://docs.woocommerce.com/document/template-structure/
- * @author  WooThemes
  * @package WooCommerce/Templates
- * @version 3.3.0
+ * @version 3.4.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly
+	exit; // Exit if accessed directly.
 }
+
 ?>
 
 <?php wc_print_notices(); ?>
@@ -38,12 +38,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<label for="username"><?php _e( 'Username or email address', 'woocommerce' ); ?> <span class="required">*</span></label>
 			<div class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide input-group">
 				<span class="input-group-addon color1-background-color color1-border-color"><i class="fa fa-user color-1-text-contrast" aria-hidden="true"></i></span>
-				<input type="text" class="form-control woocommerce-Input woocommerce-Input--text input-text" name="username" id="username" value="<?php if ( ! empty( $_POST['username'] ) ) echo esc_attr( $_POST['username'] ); ?>" />
+				<input type="text" class="form-control woocommerce-Input woocommerce-Input--text input-text" name="username" id="username" autocomplete="username" value="<?php if ( ! empty( $_POST['username'] ) ) echo esc_attr( $_POST['username'] ); ?>" />
 			</div>
 			<label for="password"><?php _e( 'Password', 'woocommerce' ); ?> <span class="required">*</span></label>
 			<div class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide input-group">
 				<span class="input-group-addon color1-background-color color1-border-color"><i class="fa fa-unlock-alt color-1-text-contrast" aria-hidden="true"></i></span>
-				<input class="form-control woocommerce-Input woocommerce-Input--text input-text" type="password" name="password" id="password" />
+				<input class="form-control woocommerce-Input woocommerce-Input--text input-text" type="password" name="password" id="password" autocomplete="current-password"/>
 			</div>
 
 			<?php do_action( 'woocommerce_login_form' ); ?>
@@ -76,19 +76,19 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<?php if ( 'no' === get_option( 'woocommerce_registration_generate_username' ) ) : ?>
 				<div class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide input-group">
 					<label for="reg_username"><?php _e( 'Username', 'woocommerce' ); ?> <span class="required">*</span></label>
-					<input type="text" class="form-control" name="username" id="reg_username" value="<?php if ( ! empty( $_POST['username'] ) ) echo esc_attr( $_POST['username'] ); ?>" />
+					<input type="text" class="form-control" name="username" id="reg_username" autocomplete="username" value="<?php if ( ! empty( $_POST['username'] ) ) echo esc_attr( $_POST['username'] ); ?>" />
 				</div>
 			<?php endif; ?>
 			<label for="reg_email"><?php _e( 'Email address', 'woocommerce' ); ?> <span class="required">*</span></label>
 			<div class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide input-group">
 				<span class="input-group-addon color1-background-color color1-border-color"><i class="fa fa-envelope color-1-text-contrast" aria-hidden="true"></i></span>
-				<input type="email" class="form-control" name="email" id="reg_email" value="<?php if ( ! empty( $_POST['email'] ) ) echo esc_attr( $_POST['email'] ); ?>" />
+				<input type="email" class="form-control" name="email" id="reg_email" autocomplete="email" value="<?php if ( ! empty( $_POST['email'] ) ) echo esc_attr( $_POST['email'] ); ?>" />
 			</div>
 			<?php if ( 'no' === get_option( 'woocommerce_registration_generate_password' ) ) : ?>
 				<label for="reg_password"><?php _e( 'Password', 'woocommerce' ); ?> <span class="required">*</span></label>
 				<div class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide input-group">
 					<span class="input-group-addon color1-background-color color1-border-color"><i class="fa fa-user color-1-text-contrast" aria-hidden="true"></i></span>
-					<input type="password" class="form-control" name="password" id="reg_password" />
+					<input type="password" class="form-control" name="password" id="reg_password" autocomplete="new-password"/>
 				</div>
 			<?php endif; ?>
 			<!-- Spam Trap -->

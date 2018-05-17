@@ -10,29 +10,26 @@
  * happen. When this occurs the version of the template file will be bumped and
  * the readme will list any important changes.
  *
- * @see     https://docs.woocommerce.com/document/template-structure/
- * @author  WooThemes
+ * @see https://docs.woocommerce.com/document/template-structure/
  * @package WooCommerce/Templates
- * @version 3.3.0
+ * @version 3.4.0
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
-	exit;
-}
+defined( 'ABSPATH' ) || exit;
 
 wc_print_notices(); ?>
 
 <form method="post" class="woocommerce-ResetPassword lost_reset_password">
 
-	<p><?php echo apply_filters( 'woocommerce_reset_password_message', esc_html__( 'Enter a new password below.', 'woocommerce') ); ?></p>
+	<p><?php echo apply_filters( 'woocommerce_reset_password_message', esc_html__( 'Enter a new password below.', 'woocommerce' ) ); ?></p>
 
 	<p class="form-group">
 		<label for="password_1"><?php esc_html_e( 'New password', 'woocommerce' ); ?> <span class="required">*</span></label>
-		<input type="password" class="form-control" name="password_1" id="password_1" />
+		<input type="password" class="form-control" name="password_1" id="password_1" autocomplete="new-password" />
 	</p>
 	<p class="form-group">
 		<label for="password_2"><?php esc_html_e( 'Re-enter new password', 'woocommerce' ); ?> <span class="required">*</span></label>
-		<input type="password" class="form-control" name="password_2" id="password_2" />
+		<input type="password" class="form-control" name="password_2" id="password_2" autocomplete="new-password" />
 	</p>
 
 	<input type="hidden" name="reset_key" value="<?php echo esc_attr( $args['key'] ); ?>" />
@@ -44,9 +41,9 @@ wc_print_notices(); ?>
 
 	<p class="woocommerce-form-row form-row">
 		<input type="hidden" name="wc_reset_password" value="true" />
-		<input type="submit" class="btn button-primary" value="<?php esc_attr_e( 'Save', 'woocommerce' ); ?>" /><?php esc_html_e( 'Save', 'woocommerce' ); ?>
+		<button type="submit" class="btn button-primary" value="<?php esc_attr_e( 'Save', 'woocommerce' ); ?>"><?php esc_html_e( 'Save', 'woocommerce' ); ?></button>
 	</p>
 
-	<?php wp_nonce_field( 'reset_password' ); ?>
+	<?php wp_nonce_field( 'reset_password', 'woocommerce-reset-password-nonce' ); ?>
 
 </form>

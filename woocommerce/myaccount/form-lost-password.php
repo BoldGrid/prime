@@ -10,18 +10,14 @@
  * happen. When this occurs the version of the template file will be bumped and
  * the readme will list any important changes.
  *
- * @see     https://docs.woocommerce.com/document/template-structure/
- * @author  WooThemes
+ * @see https://docs.woocommerce.com/document/template-structure/
  * @package WooCommerce/Templates
- * @version 3.3.0
+ * @version 3.4.0
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
-	exit;
-}
-?>
+defined( 'ABSPATH' ) || exit;
 
-<?php wc_print_notices(); ?>
+wc_print_notices(); ?>
 
 <form method="post" class="woocommerce-ResetPassword lost_reset_password">
 
@@ -29,7 +25,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 	<p class="form-group">
 		<label for="user_login"><?php esc_html_e( 'Username or email', 'woocommerce' ); ?></label>
-		<input class="form-control" type="text" name="user_login" id="user_login" />
+		<input class="form-control" type="text" name="user_login" id="user_login" autocomplete="username" />
 	</p>
 
 	<div class="clear"></div>
@@ -38,9 +34,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 	<p class="form-group">
 		<input type="hidden" name="wc_reset_password" value="true" />
-		<input type="submit" class="woocommerce-Button btn button-primary" value="<?php esc_attr_e( 'Reset Password', 'woocommerce' ); ?>" /><?php esc_html_e( 'Reset Password', 'woocommerce' ); ?>
+		<button type="submit" class="btn button-primary" value="<?php esc_attr_e( 'Reset Password', 'woocommerce' ); ?>" /><?php esc_html_e( 'Reset Password', 'woocommerce' ); ?></button>
 	</p>
 
-	<?php wp_nonce_field( 'lost_password' ); ?>
+	<?php wp_nonce_field( 'lost_password', 'woocommerce-lost-password-nonce' ); ?>
 
 </form>

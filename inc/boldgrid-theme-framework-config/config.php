@@ -232,6 +232,30 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 		$config['starter-content']['customizer']['controls']['bgtfw_footer_headings_color']['default'] = 'color-1';
 		$config['starter-content']['customizer']['controls']['bgtfw_footer_links']['default'] = 'color-1';	
 
+		// Primary Colors.
+		$config['customizer']['controls']['boldgrid_background_color']['default'] = 'color-neutral';
+		$config['customizer']['controls']['bgtfw_headings_color']['default'] = 'color-1';
+
+		// Primary color for site's title.
+		$config['customizer']['controls']['bgtfw_site_title_color']['default'] = 'color-3';
+
+		// Primary color for site's tagline.
+		$config['customizer']['controls']['bgtfw_tagline_color']['default'] = 'color-3';
+
+		// Header specific colors for background, headings, and links.
+		$config['customizer']['controls']['bgtfw_header_color']['default'] = 'color-2';
+		$config['customizer']['controls']['bgtfw_header_headings_color']['default'] = 'color-1';
+		$config['customizer']['controls']['bgtfw_header_links']['default'] = 'color-3';
+
+		// Footer specific colors for background, headings, and links.
+		$config['customizer']['controls']['bgtfw_footer_color']['default'] = 'color-2';
+		$config['customizer']['controls']['bgtfw_footer_headings_color']['default'] = 'color-1';
+		$config['customizer']['controls']['bgtfw_footer_links']['default'] = 'color-3';
+
+		// Hide titles on all pages, but show titles on posts.
+		$config['customizer']['controls']['bgtfw_pages_display_title']['default'] = '0';
+		$config['customizer']['controls']['bgtfw_posts_display_title']['default'] = '1';
+
 		// Set the default theme_mod values to use.
 		$config['starter-content']['theme_mods'] = array(
 			'bgtfw_header_layout_position' => 'header-top',

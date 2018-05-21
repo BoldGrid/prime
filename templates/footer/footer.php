@@ -11,7 +11,7 @@
 ?>
 <footer id="colophon" <?php bgtfw_footer_class( array( 'site-footer' ) ); ?> role="contentinfo" <?php BoldGrid_Framework_Schema::footer( true ); ?>>
 	<?php do_action( 'boldgrid_footer_top' ); ?>
-	<div class="footer-content <?php echo bgtfw_footer_container(); ?>">
+	<div <?php bgtfw_inner_footer_class( 'footer-content' ) ?>>
 		<div class="social-menu-wrapper">
 			<?php do_action( 'boldgrid_menu_social' ); ?>
 		</div>

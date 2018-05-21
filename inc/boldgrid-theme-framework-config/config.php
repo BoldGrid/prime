@@ -196,6 +196,41 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 			'page_on_front' => '{{homepage}}',
 			'page_for_posts' => '{{blog}}',
 		);
+		
+		// Primary Colors.
+		$config['customizer']['controls']['boldgrid_background_color']['default'] = 'color-neutral';
+		$config['customizer']['controls']['bgtfw_headings_color']['default'] = 'color-1';
+
+		// Primary color for site's title.
+		$config['customizer']['controls']['bgtfw_site_title_color']['default'] = 'color-3';
+
+		// Primary color for site's tagline.
+		$config['customizer']['controls']['bgtfw_tagline_color']['default'] = 'color-3';
+
+		// Header specific colors for background, headings, and links.
+		$config['customizer']['controls']['bgtfw_header_color']['default'] = 'color-2';
+		$config['customizer']['controls']['bgtfw_header_headings_color']['default'] = 'color-1';
+		$config['customizer']['controls']['bgtfw_header_links']['default'] = 'color-3';
+
+		// Footer specific colors for background, headings, and links.
+		$config['customizer']['controls']['bgtfw_footer_color']['default'] = 'color-2';
+		$config['customizer']['controls']['bgtfw_footer_headings_color']['default'] = 'color-1';
+		$config['customizer']['controls']['bgtfw_footer_links']['default'] = 'color-3';
+
+		// Hide titles on all pages, but show titles on posts.
+		$config['customizer']['controls']['bgtfw_pages_display_title']['default'] = '0';
+		$config['customizer']['controls']['bgtfw_posts_display_title']['default'] = '1';
+
+		// Starter Content Color Configs
+		$config['starter-content']['customizer']['controls']['bgtfw_header_color']['default'] = 'color-5';
+		$config['starter-content']['customizer']['controls']['bgtfw_headings_color']['default'] = 'color-2';
+		$config['starter-content']['customizer']['controls']['bgtfw_header_links']['default'] = 'color-1';
+		$config['starter-content']['customizer']['controls']['bgtfw_site_title_color']['default'] = 'color-neutral';
+		$config['starter-content']['customizer']['controls']['bgtfw_tagline_color']['default'] = 'color-4';
+
+		$config['starter-content']['customizer']['controls']['bgtfw_footer_color']['default'] = 'color-5';
+		$config['starter-content']['customizer']['controls']['bgtfw_footer_headings_color']['default'] = 'color-1';
+		$config['starter-content']['customizer']['controls']['bgtfw_footer_links']['default'] = 'color-1';	
 
 		// Primary Colors.
 		$config['customizer']['controls']['boldgrid_background_color']['default'] = 'color-neutral';
@@ -235,8 +270,6 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 			'bgtfw_blog_layout' => 'design-3',
 			'bgtfw_layout_page' => 'no-sidebar',
 			'bgtfw_site_title_typography' => array(
-				'color' => '#ffffff',
-				'font-family' => 'Roboto',
 				'font-size' => '42px',
 				'text-transform' => 'uppercase',
 				'line-height' => '1.1',
@@ -244,32 +277,24 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 				'variant' => 'regular'
 			),
 			'bgtfw_tagline_typography' => array(
-				'color' => '#ffffff',
-				'font-family' => 'Roboto',
 				'font-size' => '30px',
 				'line-height' => '1.1',
 				'text-align' => 'left',
 				'variant' => '100'
 			),
 			'bgtfw_menu_typography' => array(
-				'color' => '#333333',
-				'font-family' => 'Roboto',
 				'font-size' => '18px',
 				'line-height' => '1.5',
 				'text-transform' => 'uppercase',
 				'variant' => 'regular'
 			),
 			'bgtfw_body_headings' => array(
-				'color' => '#333333',
-				'font-family' => 'Roboto',
 				'font-size' => '14px',
 				'line-height' => '1.5',
 				'text-transform' => 'none',
 				'variant' => 'regular'
 			),
 			'bgtfw_body_typography' => array(
-				'color' => '#333333',
-				'font-family' => 'Roboto',
 				'font-size' => '17px',
 				'line-height' => '1.4',
 				'text-transform' => 'none',

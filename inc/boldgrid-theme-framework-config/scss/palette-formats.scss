@@ -2,5 +2,14 @@
 # Palettes
 ------------------------------------------------------------------------*/
 .palette-primary {
-	// Any custom color palette code goes here.
+
+	/*-----------------------------------------------
+	## WooCommerce
+	-----------------------------------------------*/
+	#reviews #comments ol.commentlist li .meta {
+		color: $palette-primary_1;
+	}
+	#reviews #comments ol.commentlist li .comment-text {
+		border: 1px solid $palette-primary_1;
+	}
 }

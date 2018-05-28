@@ -2,5 +2,12 @@
 # Palettes
 ------------------------------------------------------------------------*/
 .palette-primary {
-	// Any custom color palette code goes here.
+	.panel-default > .panel-heading {
+		background-color: $palette-primary_1;
+		color: $text-contrast-palette-primary_1;
+	}
+	.panel-default > .panel-heading,
+	.panel-default {
+		border-color: $palette-primary_1;
+	}
 }

@@ -241,14 +241,14 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 		// Default footer layout will be layout-7.
 		$config['customizer']['controls']['bgtfw_footer_layouts']['default'] = 'layout-7';
 
-		// Show blog and archives in a 2 column layout.
-		$config['customizer']['controls']['bgtfw_pages_blog_blog_page_layout_columns']['default'] = '2';
+		// Show blog and archives in a 1 column layout.
+		$config['customizer']['controls']['bgtfw_pages_blog_blog_page_layout_columns']['default'] = '1';
 
 		// Show excerpts instead of full blog post on blog and archives.
 		$config['customizer']['controls']['bgtfw_pages_blog_blog_page_layout_content']['default'] = 'excerpt';
 
 		// The blog page will use design-3 as the default.
-		$config['customizer']['controls']['bgtfw_blog_layout']['default'] = 'design-3';
+		$config['customizer']['controls']['bgtfw_blog_layout']['default'] = 'design-1';
 
 		// Pages will not show a sidebar by default.
 		$config['customizer']['controls']['bgtfw_layout_page']['default'] = 'no-sidebar';

@@ -1,7 +1,6 @@
-# prime
+# Prime
 
 - Contributors: rramo012, timph
-- Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-layout, rtl-language-support, translation-ready
 - Requires at least: 4.8
 - Tested up to: 5.0.0
 - License: GNU General Public License v2 or later

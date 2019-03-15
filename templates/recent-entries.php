@@ -9,37 +9,37 @@
  */
 ?>
 <?php
-	$recent_posts = wp_get_recent_posts( array( 'numberposts' => '10', 'post_status' => 'publish' ) );
-	$pages = get_pages( array( 'sort_column' => 'menu_order' ) );
+	$bgtfw_recent_posts = wp_get_recent_posts( array( 'numberposts' => '10', 'post_status' => 'publish' ) );
+	$bgtfw_pages = get_pages( array( 'sort_column' => 'menu_order' ) );
 ?>
 
-<?php if ( $recent_posts || $pages ) : ?>
+<?php if ( $bgtfw_recent_posts || $bgtfw_pages ) : ?>
 	<div class="row">
-		<?php if ( $recent_posts ) : ?>
-			<div class="<?php echo ! $pages ? 'col-md-12' : 'col-md-6'; ?> search-posts">
+		<?php if ( $bgtfw_recent_posts ) : ?>
+			<div class="<?php echo ! $bgtfw_pages ? 'col-md-12' : 'col-md-6'; ?> search-posts">
 				<h3><?php _e( 'Recent Articles', 'bgtfw' ); ?></h3>
 				<ul class="list-group">
 					<?php
-						$args = array( 'numberposts' => '10', 'post_status' => 'publish' );
-						$recent_posts = wp_get_recent_posts( $args );
-					foreach ( $recent_posts as $recent ) {
-						if ( $recent['post_title'] ) {
-							echo '<li class="list-group-item"><a href="' . get_permalink( $recent['ID'] ) . '">' . $recent['post_title'] . '</a></li>';
+						$bgtfw_args = array( 'numberposts' => '10', 'post_status' => 'publish' );
+						$bgtfw_recent_posts = wp_get_recent_posts( $bgtfw_args );
+					foreach ( $bgtfw_recent_posts as $bgtfw_recent ) {
+						if ( $bgtfw_recent['post_title'] ) {
+							echo '<li class="list-group-item"><a href="' . get_permalink( $bgtfw_recent['ID'] ) . '">' . $bgtfw_recent['post_title'] . '</a></li>';
 						}
 					}
 					?>
 				</ul>
 			</div> <!-- .search-posts -->
 		<?php endif; ?>
-		<?php if ( $pages ) : ?>
-			<div class="<?php echo ! $recent_posts ? 'col-md-12' : 'col-md-6'; ?> search-pages">
+		<?php if ( $bgtfw_pages ) : ?>
+			<div class="<?php echo ! $bgtfw_recent_posts ? 'col-md-12' : 'col-md-6'; ?> search-pages">
 				<h3><?php _e( 'Page Sitemap', 'bgtfw' ); ?></h3>
 				<ul class="list-group">
 					<?php
 						$count = 0;
-					foreach ( $pages as $page ) {
-						if ( $page->post_title && $count < 10 ) {
-							echo '<li class="list-group-item"><a href="' . get_permalink( $page->ID ) . '">' . $page->post_title . '</a></li>';
+					foreach ( $bgtfw_pages as $bgtfw_page ) {
+						if ( $bgtfw_page->post_title && $count < 10 ) {
+							echo '<li class="list-group-item"><a href="' . get_permalink( $bgtfw_page->ID ) . '">' . $bgtfw_page->post_title . '</a></li>';
 						}
 						$count++;
 					}

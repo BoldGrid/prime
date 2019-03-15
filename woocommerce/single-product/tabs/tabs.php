@@ -26,21 +26,21 @@ if ( ! defined( 'ABSPATH' ) ) {
  * Each tab is an array containing title, callback and priority.
  * @see woocommerce_default_product_tabs()
  */
-$tabs = apply_filters( 'woocommerce_product_tabs', array() );
+$woocommerce_tabs = apply_filters( 'woocommerce_product_tabs', array() );
 
-if ( ! empty( $tabs ) ) : ?>
+if ( ! empty( $woocommerce_tabs ) ) : ?>
 
 	<div class="woocommerce-tabs wc-tabs-wrapper">
 		<ul class="wc-tabs nav nav-tabs">
-			<?php foreach ( $tabs as $key => $tab ) : ?>
+			<?php foreach ( $woocommerce_tabs as $key => $woocommerce_tab ) : ?>
 				<li class="<?php echo esc_attr( $key ); ?>_tab">
-					<a href="#tab-<?php echo esc_attr( $key ); ?>" class="color1-background-hover color-1-text-contrast-hover"><?php echo apply_filters( 'woocommerce_product_' . $key . '_tab_title', esc_html( $tab['title'] ), $key ); ?></a>
+					<a href="#tab-<?php echo esc_attr( $key ); ?>" class="color1-background-hover color-1-text-contrast-hover"><?php echo apply_filters( 'woocommerce_product_' . $key . '_tab_title', esc_html( $woocommerce_tab['title'] ), $key ); ?></a>
 				</li>
 			<?php endforeach; ?>
 		</ul>
-		<?php foreach ( $tabs as $key => $tab ) : ?>
+		<?php foreach ( $woocommerce_tabs as $key => $woocommerce_tab ) : ?>
 			<div class="woocommerce-Tabs-panel woocommerce-Tabs-panel--<?php echo esc_attr( $key ); ?> panel entry-content wc-tab" id="tab-<?php echo esc_attr( $key ); ?>">
-				<?php call_user_func( $tab['callback'], $key, $tab ); ?>
+				<?php call_user_func( $woocommerce_tab['callback'], $key, $woocommerce_tab ); ?>
 			</div>
 		<?php endforeach; ?>
 	</div>

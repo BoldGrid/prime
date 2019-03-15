@@ -835,13 +835,3 @@ function bgtfw_get_contents( $partial ) {
 }
 
 add_filter( 'boldgrid_theme_framework_config', 'boldgrid_prime_framework_config' );
-
-// Load the BoldGrid Library
-if ( ! class_exists( 'Boldgrid_Premium_Loader' ) ) {
-	require_once get_template_directory() . '/inc/class-boldgrid-premium-loader.php';
-}
-
-$loader = new Boldgrid_Premium_Loader();
-
-// Enable the ClaimPremiumKey notice.
-add_filter( 'Boldgrid\Library\Library\Notice\ClaimPremiumKey_enable', '__return_true' );

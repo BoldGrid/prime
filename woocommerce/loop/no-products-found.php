@@ -20,6 +20,4 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 
-?>
-
-<?php wc_print_notice( __( 'No products were found matching your selection.', 'woocommerce' ), 'notice' ); ?>
+wc_print_notice( __( 'No products were found matching your selection.', 'woocommerce' ), 'notice' );

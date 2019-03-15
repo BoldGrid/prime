@@ -1,3 +1,25 @@
+.welcome-panel-column-container .learning-item {
+  display: grid;
+  grid-template-columns: 79px 1fr;
+  grid-gap: 10px;
+  align-items: center;
+}
+.welcome-panel-content {
+  margin-right: 13px;
+}
+
+.welcome-panel-column-container .wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  background-color: #fff;
+}
+
+.welcome-panel-column-container .box {
+  border-radius: 5px;
+  padding: 0 20px;
+}
+
 .bgcrio-about-wrap > div:first-child {
   background-image: url(../images/welcome/bg-crio-gradient.png), -webkit-gradient(linear, left top, right top, from(#f95c27), to(#9d7770));
   background-image: url(../images/welcome/bg-crio-gradient.png), linear-gradient(to right, #f95c27, #9d7770);

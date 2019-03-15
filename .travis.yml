@@ -1,14 +1,16 @@
 language: php
 sudo: false
 before_script:
-- bash clone master
-script: "${TRAVIS_TAG:+bash release}"
+  - nvm install 10.13.0
+  - nvm use 10.13.0
+  - yarn install
+script: "${TRAVIS_TAG:+bash bin/release}"
 deploy:
   provider: releases
+  skip_cleanup: true
   api_key:
     secure: OGbDuJ1YkBXkPIsfil/m7FnKMnfKlI1OUnYauLU4XJUwwSTBB2YqXElVpGK3rOjs0Er+aSfNkngvpqjtHuc5ofZMgX29Z0Bdp+bh7cKpxRt2psZroKeaegrNGkyiT7Exr/9RAgYG58+eKN7MaAMSGkrowULEJbf9d4mz1BfHHIKSHGQwF+wNVEgif8AwMEQzGk61bLewRwKdgDoVWwtrUiu4fVHM6leC6l7A7bm8f+RQzebVHvZFYuCxR3bPfp4+6iaRJ8zw9Nl1N1TmB+DDCtKzzZmWAcxpZjog6bGBdX7dbUqdTXIR+mk4BlAZQjpiSAffcHIs1t+xfKPExQbTAkVwgjlJ8V2qqKlEnwp5KaawDDzJYr/CYGkTbjYhCbRd0Py5xSnZ9/ZSsNexYoyhspeekTOOHdZByX5uhMCTc1lucbmGX83OZ+KBpvGpUgYF4SBTGiGh0PkOgw7rwrDoNBgryvV6kbG6mXSnYyJnmTzvsUltTINZPexpcdICH9bkMkDhM7/uRRV6B7OrQeI2OpmAh9SC5RcSMJ9KiiHA7wQZivEYJv1EI1GDFU3vEjVGr0okzm2r0XtEu6wh5aFRHGlge89DHxna8eqF2l7EqC+ibgOO5BCkOKxGx+6IOzq4V6upZMxOfe/giPhPLy/VbTmHyF66FnfuQZzHiMnyGQ8=
-  file: boldgrid-prime.zip
+  file: prime.zip
   on:
     repo: BoldGrid/prime
     tags: true
-    skip_cleanup: true

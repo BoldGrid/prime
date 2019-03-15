@@ -46,9 +46,6 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-12 col-xs-12 col-sm-12">
-				<div class="bg-box-cover bg-box-flush bg-box">
-						<p class="boldgrid-google-maps" style="margin: 0 -15px; line-height: 0;"><iframe style="width: 100%; filter: grayscale(100%);" src="https://maps.google.com/maps?q=New+York%2C+NY&amp;t=m&amp;z=16&amp;output=embed" width="2000" height="450" frameborder="0"></iframe></p>
-				</div>
 			</div>
 		</div>
 	</div>

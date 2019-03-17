@@ -4,7 +4,8 @@ const path = require( 'path' ),
 	wpTextdomain = require( 'wp-textdomain' ),
 	headerUpdate = require( 'wp-header-update' ),
 	getBGTFW = require( './modules/install-bgtfw.js' ),
-	zip = require( './modules/zip.js' );
+	zip = require( './modules/zip.js' ),
+	updatePhpdocs = require( './modules/update-phpdocs.js' );
 
 getBGTFW().then( () => {
 	( async () => {
@@ -23,12 +24,35 @@ getBGTFW().then( () => {
 			force: true
 		} );
 
+		updatePhpdocs( '**/*.php', { ...phpdocConfig, ...{
+			name: 'license',
+			value: 'GNU General Public License, version 3'
+		} } );
+
+		updatePhpdocs( '**/*.php', { ...phpdocConfig, ...{
+			name: 'package',
+			value: 'Crio'
+		} } );
+
 	} )().then( () => {
 		( async () => {
 			await tag().then( () => zipTheme() ).catch( console.error );
 		} );
 	} );
 } ).catch( console.error );
+
+const phpdocConfig = {
+	fix: true,
+	force: true,
+	globOpts: {
+		cwd: path.resolve( __dirname + '/..' ),
+		ignore: [
+			'inc/boldgrid-theme-framework/**/*',
+			'vendor/**/*',
+			'woocommerce/**/*'
+		]
+	}
+};
 
 const tag = async () => {
 	const cmds = [

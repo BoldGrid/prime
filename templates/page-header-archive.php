@@ -17,21 +17,21 @@
 				if ( ! is_wp_error( $archive_url ) ) {
 					printf(
 						'<h1 class="page-title %1$s"><a %2$s href="%3$s" rel="bookmark">%4$s</a></h1>',
-						get_theme_mod( 'bgtfw_global_title_size' ),
+						esc_attr( get_theme_mod( 'bgtfw_global_title_size' ) ),
 						BoldGrid::add_class( 'pages_title', [ 'link' ], false ),
 						esc_url( $archive_url ),
-						get_the_archive_title()
+						wp_kses_post( get_the_archive_title() )
 					);
 				} else {
 					printf(
 						'<h1 class="page-title %1$s"><span %2$s>%3$s</span></h1>',
-						get_theme_mod( 'bgtfw_global_title_size' ),
+						esc_attr( get_theme_mod( 'bgtfw_global_title_size' ) ),
 						BoldGrid::add_class( 'pages_title', [ 'link' ], false ),
-						get_the_archive_title()
+						wp_kses_post( get_the_archive_title() )
 					);
 				}
 
-				the_archive_description( '<div class="taxonomy-description">', '</div>' );
+				wp_kses_post( the_archive_description( '<div class="taxonomy-description">', '</div>' ) );
 			?>
 		</div>
 	</header>

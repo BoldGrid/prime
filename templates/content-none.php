@@ -11,7 +11,7 @@
 	<div class="jumbotron text-center">
 		<div class="container">
 			<h1 class="page-title"><?php esc_html_e( 'Nothing Found', 'bgtfw' ); ?></h1>
-				<p><?php _e( 'The page you requested could not be found.', 'bgtfw' ); ?></p>
+				<p><?php esc_html_e( 'The page you requested could not be found.', 'bgtfw' ); ?></p>
 			<div class="row">
 				<div class="col-md-12">
 					<?php

@@ -8,7 +8,7 @@
  */
 
 $image_path = function ( $file ) {
-	echo get_parent_theme_file_uri( 'images/' . $file );
+	echo esc_url( get_parent_theme_file_uri( 'images/' . $file ) );
 };
 
 $divider = function() { ?>

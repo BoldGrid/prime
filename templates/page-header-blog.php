@@ -13,10 +13,10 @@
 			<?php
 				printf(
 					'<h1 class="page-title %1$s"><a %2$s href="%3$s" rel="bookmark">%4$s</a></h1>',
-					get_theme_mod( 'bgtfw_global_title_size' ),
+					esc_attr( get_theme_mod( 'bgtfw_global_title_size' ) ),
 					BoldGrid::add_class( 'pages_title', [ 'link' ], false ),
 					esc_url( get_permalink( get_option( 'page_for_posts', true ) ) ),
-					get_the_title( get_option( 'page_for_posts', true ) )
+					wp_kses_post( get_the_title( get_option( 'page_for_posts', true ) ) )
 				);
 			?>
 		</div>

@@ -3,7 +3,7 @@
  * Class: Boldgrid_Crio_Welcome
  *
  * @since      x.x.x
- * @package    Boldgrid_Crio
+ * @package    Prime
  * @subpackage Boldgrid_Crio_Welcome
  * @author     BoldGrid <support@boldgrid.com>
  * @link       https://boldgrid.com

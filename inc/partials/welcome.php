@@ -2,7 +2,7 @@
 /**
  * This file contains the "Welcome" markup displayed after Crio is activated.
  *
- * @package Boldgrid_Theme_Framework
+ * @package Prime
  * @since 2.0.0
  */
 

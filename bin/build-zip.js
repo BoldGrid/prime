@@ -41,7 +41,6 @@ const domain = args[0];
 const version = args[1];
 const tempDir = `../${ domain }-zip-building/${ domain }`;
 
-
 getBGTFW().then( () => {
 	rimraf( path.resolve( tempDir, '..' ), () => {
 		let options = {

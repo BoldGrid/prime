@@ -18,7 +18,7 @@ $is_sa_estimate = 'sa_estimate' === $post->post_type;
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<?php wp_head();
-	if( $is_sa_invoice || $is_sa_estimate ) {
+	if ( $is_sa_invoice || $is_sa_estimate ) {
 		do_action( 'si_head', true );
 	}
 	?>

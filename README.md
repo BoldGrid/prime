@@ -13,6 +13,8 @@ The last command creates a new .zip file for a WordPress theme called `Prime` at
 
 ## Changelog
 
+### 2.3.0 ###
+* Update: Added compatibility with Crio Page Header Templates. [#94] (https://github.com/BoldGrid/prime/pull/94)
 ### 2.2.13 ###
 * Bug Fix: Cannot use Crio Customizer with Sprout Invoices [#93] (https://github.com/BoldGrid/prime/issues/93)
 

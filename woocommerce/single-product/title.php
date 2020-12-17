@@ -20,7 +20,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 $has_header_template = apply_filters( 'crio_premium_get_page_header', get_the_ID() );
-$has_header_template = $has_header_template === get_the_ID() ? false : $has_header_template;
+$has_header_template = get_the_ID() === $has_header_template ? false : $has_header_template;
 $template_has_title  = get_post_meta( $has_header_template, 'crio-premium-template-has-page-title', true );
 
 if ( ! $template_has_title ) {

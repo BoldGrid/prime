@@ -133,6 +133,46 @@
   display: block !important;
 }
 
+.pro-cards-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.pro-cards-container .card {
+	padding: 0;
+	min-width: 325px;
+	flex-basis: 0;
+}
+
+.pro-cards-container .card .title,
+.pro-cards-container .card .subtitle {
+	padding-left: 25px;
+}
+
+.pro-cards-container .card .image {
+	min-height: 250px;
+	width: 100%;
+	background-color: lightgray;
+}
+
+.pro-cards-container .card .action-links {
+	padding-top: 25px;
+	padding-bottom: 25px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.pro-cards-container .card .action-links a {
+    margin-left: 25px;
+	margin-right: 25px;
+	text-decoration: none;
+}
+
+.pro-cards-container .card .action-links a span {
+    width: 30px;
+    font-size: 30px;
+}
+
 /**
 * Styles for the mini connect prompt.
 */

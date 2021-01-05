@@ -136,6 +136,8 @@
 .pro-cards-container {
 	display: flex;
 	justify-content: space-between;
+	margin-left:-20px;
+	margin-right:20px;
 }
 
 .pro-cards-container .card {
@@ -153,6 +155,13 @@
 	min-height: 250px;
 	width: 100%;
 	background-color: lightgray;
+}
+
+.pro-feature-image {
+	width: 100%;
+	height: 460px;
+	margin-left:-20px;
+	margin-top:20px;
 }
 
 .pro-cards-container .card .action-links {

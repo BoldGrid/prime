@@ -1,6 +1,6 @@
 {
   "name": "Prime",
-  "version": "2.4.0",
+  "version": "2.5.0-rc.1",
   "description": "BoldGrid Theme Framework",
   "main": "index.js",
   "scripts": {

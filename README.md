@@ -13,6 +13,9 @@ The last command creates a new .zip file for a WordPress theme called `Prime` at
 
 ## Changelog
 
+### 2.5.0 ###
+New Feature: Added a 'Crio' top level menu page, moved the welcome page there, and added a 'Get Pro' page to highlight new premium features.
+
 ### 2.4.0 ###
 New Feature: Increased flexibility of page / post / woocommerce templates to allow better compatibility with Crio Pro's Custom Page Headers [#100] (https://github.com/BoldGrid/prime/pull/100)
 

@@ -25,7 +25,8 @@ class Boldgrid_Crio_Welcome {
 	 * @since 2.0.0
 	 */
 	public function add_hooks() {
-		add_action( 'admin_menu', array( $this, 'add_admin_menu' ) );
+		// This needs to be a high priority, to be sure it runs before adding notice counts.
+		add_action( 'admin_menu', array( $this, 'add_admin_menu' ), 1 );
 	}
 
 	/**

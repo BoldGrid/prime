@@ -142,19 +142,22 @@
 
 .pro-cards-container .card {
 	padding: 0;
-	min-width: 325px;
 	flex-basis: 0;
 }
 
 .pro-cards-container .card .title,
 .pro-cards-container .card .subtitle {
-	padding-left: 25px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
-.pro-cards-container .card .image {
-	min-height: 250px;
+.pro-cards-container .card .icon span {
 	width: 100%;
-	background-color: lightgray;
+    font-size: 4em;
+    display: flex;
+    min-height: 2em;
+    justify-content: center;
+    align-items: center;
 }
 
 .pro-feature-image {
@@ -162,18 +165,19 @@
 	height: 460px;
 	margin-left:-20px;
 	margin-top:20px;
+	position: relative;
 }
 
 .pro-cards-container .card .action-links {
-	padding-top: 25px;
-	padding-bottom: 25px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	display: flex;
 	justify-content: space-between;
 }
 
 .pro-cards-container .card .action-links a {
-    margin-left: 25px;
-	margin-right: 25px;
+    margin-left: 10px;
+	margin-right: 10px;
 	text-decoration: none;
 }
 
@@ -181,6 +185,97 @@
     width: 30px;
     font-size: 30px;
 }
+
+h2.cta-heading {
+	position: absolute;
+    left: calc( 50% - 68.975px);
+    top: calc( 50% - 50px);
+    color: #f95b26;
+}
+a.cta-button {
+	position: absolute;
+    left: calc( 50% - 63.725px);
+    top: calc( 50% + 60px);
+    background-color: #f95b26;
+    border: none;
+    color: #fff;
+    text-decoration: none;
+    font-family: "Exo 2";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 40px;
+    padding: 0 40px;
+}
+
+a.cta-button:hover {
+	background-color: #fa8158;
+}
+
+a.cta-button:active {
+	background-color: #ee6131;
+	border-color: #ee6131;
+	color: #ee6131;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+	box-shadow: none;
+}
+
+a.cta-button:focus {
+	box-shadow: none;
+}
+
+.sticky-headers-card .icon span {
+	transform: rotate(180deg);
+}
+
+.new-ribbon-wrapper {
+	width: 85px;
+	height: 88px;
+	overflow: hidden;
+	position: absolute;
+	top: -3px;
+	right: -3px;
+}
+
+.new-ribbon {
+    font: bold 15px Sans-Serif;
+    text-align: center;
+    text-shadow: rgba(255,255,255,0.5) 0px 1px 0px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    position: relative;
+    padding: 7px 0;
+    left: -5px;
+    top: 15px;
+    width: 120px;
+    background-color: #f95b26;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f95b26), to(#fa8158));
+    background-image: -webkit-linear-gradient(top, #f95b26, #fa8158);
+    background-image: -moz-linear-gradient(top, #f95b26, #fa8158);
+    background-image: -ms-linear-gradient(top, #f95b26, #fa8158);
+    background-image: -o-linear-gradient(top, #f95b26, #fa8158);
+    color: #FFF;
+    -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+}
+
+.new-ribbon:before, .new-ribbon:after {
+	content: "";
+	border-top:   3px solid #f95b26;
+	border-left:  3px solid transparent;
+	border-right: 3px solid transparent;
+	position: absolute;
+	bottom: -3px;
+  }
+
+  .new-ribbon:before {
+	left: 0;
+  }
+  .new-ribbon:after {
+	right: 0;
+  }​
 
 /**
 * Styles for the mini connect prompt.

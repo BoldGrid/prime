@@ -26,9 +26,12 @@ $go_pro_url = apply_filters( 'bgtfw_upgrade_url_pro_features', null );
 			<?php esc_html_e( 'Upgrade to Crio Pro today to get over 150 additional Customizer controls, Custom Page Headers, and more.', 'prime' ); ?>
 		</p>
 	</div>
-	<div class="pro-feature-image" style="background-image:url(<?php echo esc_url( get_template_directory_uri() ) . '/images/welcome/custom-page-headers.png'; ?>)">
-		<h2 class="cta-heading">Crio Pro</h2>
-		<a class="cta-button" href="<?php echo esc_url( $go_pro_url ); ?>&utm_content=Go_Pro " target="_blank">Go Pro</a>
+	<div class="pro-feature-image">
+		<img src="<?php echo esc_url( get_template_directory_uri() ) . '/images/welcome/custom-page-headers.png'; ?>"></img>
+		<div class="cta">
+			<h2 class="cta-heading">Crio Pro</h2>
+			<a class="cta-button" href="<?php echo esc_url( $go_pro_url ); ?>&utm_content=Go_Pro " target="_blank">Go Pro</a>
+		</div>
 	</div>
 <?php
 /**

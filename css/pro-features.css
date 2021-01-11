@@ -135,9 +135,11 @@
 
 .pro-cards-container {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	margin-left:-20px;
 	margin-right:20px;
+	max-width: 100%;
+	flex-wrap: wrap;
 }
 
 .pro-cards-container .card {
@@ -162,7 +164,6 @@
 
 .pro-feature-image {
 	width: 100%;
-	height: 460px;
 	margin-left:-20px;
 	margin-top:20px;
 	position: relative;
@@ -186,25 +187,29 @@
     font-size: 30px;
 }
 
-h2.cta-heading {
+.cta {
 	position: absolute;
-    left: calc( 50% - 68.975px);
-    top: calc( 50% - 50px);
-    color: #f95b26;
+	top: 50%;
+	left: 50%;
+	transform: translate( -50%, -50% );
+	text-align: center;
 }
+
+h2.cta-heading {
+	font-weight: 400;
+	color: #f95b26;
+	margin-top: 0px;
+}
+
 a.cta-button {
-	position: absolute;
-    left: calc( 50% - 63.725px);
-    top: calc( 50% + 60px);
     background-color: #f95b26;
     border: none;
     color: #fff;
     text-decoration: none;
-    font-family: "Exo 2";
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 40px;
-    padding: 0 40px;
+    font-size: 1em;
+    font-weight: 600;
+	padding: 10px 40px;
+	margin: 0 auto;
 }
 
 a.cta-button:hover {

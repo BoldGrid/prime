@@ -15,7 +15,7 @@ if ( ! defined( 'WPINC' ) ) {
  * it's function is defined in the class
  * Boldgrid_Framework_Pro_Feature_Cards.
  */
-$go_pro_url = apply_filters( 'bgtfw_upgrade_url_pro_features' );
+$go_pro_url = apply_filters( 'bgtfw_upgrade_url_pro_features', null );
 
 ?>
 

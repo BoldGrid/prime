@@ -4,7 +4,7 @@ Tags: news, blog, e-commerce, sticky-post, theme-options, threaded-comments, ful
 Requires PHP: 5.6
 Requires at least: 4.8
 Tested up to: 5.6
-Stable tag: 2.4.0
+Stable tag: 2.5.1
 License: GPL-3.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-3.0-standalone.html
 
@@ -14,6 +14,9 @@ Prime is a WordPress SuperTheme that allows designers, developers and other web 
 Prime is a WordPress SuperTheme that allows designers, developers and other web professionals to create without bounds or restrictions.  Prime’s advanced customization options are completely integrated with the WordPress Customizer API, providing you with a powerful, but familiar interface to customize your website. Our integration gives you granular control over many elements straight from the Customizer, and even device previews so you can see how your site looks on different devices. Crio’s unique color palette system keeps colors consistent across your site. Drag and drop colors in your palette to increase or decrease the usage of that color throughout your website. Use the advanced controls to create a custom Header, Footer, or Blog Page layout. Be Bold and stand above the rest with Prime by BoldGrid!
 
 == Changelog ==
+
+= 2.5.1 =
+Bug Fix: Fix responsiveness of Pro Features Page.
 
 = 2.5.0 =
 New Feature: Added a 'Crio' top level menu page, moved the welcome page there, and added a 'Get Pro' page to highlight new premium features.

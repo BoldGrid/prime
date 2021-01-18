@@ -194,16 +194,19 @@
     font-size: 30px;
 }
 
-h2.cta-heading {
+.cta-heading-container {
 	position: absolute;
-    left: calc( 50% - 68.975px);
-    top: calc( 50% - 50px);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0px;
+}
+
+h2.cta-heading {
+	padding-top: 0px;
     color: #f95b26;
 }
 a.cta-button {
-	position: absolute;
-    left: calc( 50% - 63.725px);
-    top: calc( 50% + 60px);
     background-color: #f95b26;
     border: none;
     color: #fff;
@@ -212,7 +215,7 @@ a.cta-button {
     font-size: 16px;
     font-weight: 400;
     line-height: 40px;
-    padding: 0 40px;
+    padding: 15px 40px;
 }
 
 a.cta-button:hover {

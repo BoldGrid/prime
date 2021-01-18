@@ -28,8 +28,10 @@ $go_pro_url = 'https://www.boldgrid.com/central/checkout/crio?utm_source=Crio_-_
 	</div>
 	<div class="pro-feature-image">
 		<img src="<?php echo esc_url( get_template_directory_uri() ) . '/images/welcome/custom-page-headers.png'; ?>"></img>
-		<h2 class="cta-heading">Crio Pro</h2>
-		<a class="cta-button" href="<?php echo esc_url( $go_pro_url ); ?>&utm_content=Upgrade_Now " target="_blank">Upgrade Now</a>
+		<div class="cta-heading-container">
+			<h2 class="cta-heading">Crio Pro</h2>
+			<a class="cta-button" href="<?php echo esc_url( $go_pro_url ); ?>&utm_content=Upgrade_Now " target="_blank">Upgrade Now</a>
+		</div>
 	</div>
 <?php
 /**

@@ -164,10 +164,16 @@
 
 .pro-feature-image {
 	width: 100%;
-	height: 460px;
 	margin-left:-20px;
 	margin-top:20px;
 	position: relative;
+}
+
+.pro-feature-image > img {
+    margin: 0;
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
 }
 
 .pro-cards-container .card .action-links {

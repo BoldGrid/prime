@@ -13,6 +13,8 @@ The last command creates a new .zip file for a WordPress theme called `Prime` at
 
 ## Changelog
 
+### 2.5.2 ###
+Bug Fix: Update 'Tested to' to 5.7
 ### 2.5.1 ###
 Bug Fix: Fix responsiveness of Pro Features Page.
 

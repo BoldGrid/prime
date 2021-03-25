@@ -517,6 +517,7 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 						'type' => 'boldgrid_site_identity',
 						'key' => 'branding',
 						'align' => 'w',
+						'uid' => 'h47',
 						'display' => [
 							[
 								'selector' => '.custom-logo',
@@ -539,6 +540,7 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 						'type' => 'boldgrid_menu_main',
 						'key' => 'menu',
 						'align' => 'e',
+						'uid' => 'h48',
 					],
 				],
 			],

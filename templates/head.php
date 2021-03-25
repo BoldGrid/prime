@@ -10,8 +10,13 @@
  */
 global $post;
 
-$is_sa_invoice  = 'sa_invoice' === $post->post_type;
-$is_sa_estimate = 'sa_estimate' === $post->post_type;
+if ( ! empty( $post ) ) {
+	$is_sa_invoice  = 'sa_invoice' === $post->post_type;
+	$is_sa_estimate = 'sa_estimate' === $post->post_type;
+} else {
+	$is_sa_invoice  = false;
+	$is_sa_estimate = false;
+}
 ?>
 <head>
 	<meta http-equiv="x-ua-compatible" content="ie=edge">

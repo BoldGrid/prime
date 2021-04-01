@@ -35,7 +35,7 @@
 				<div class="bg-box">
 					<div class="row">
 						<div class="col-md-12 col-xs-12 col-sm-12">
-							<div class="bg-img bg-img-3 bg-box bg-box-square bg-box-cover color-4-text-contrast color4-background-color" style="margin-top: 2.2em; padding: 2em 3em;">
+							<div class="bg-img bg-img-3 bg-box bg-box-square bg-box-cover color-3-text-contrast color3-background-color" style="margin-top: 2.2em; padding: 2em 3em;">
 								<p class="color1-color" style="margin-bottom: .3em;" data-font-weight="400">Address:</p>
 								<p style="margin-bottom: .3em;">1234 Franconia Way</p>
 								<p class="">New York City, New York 65432</p>

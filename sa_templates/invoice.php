@@ -189,7 +189,7 @@ do_action( 'pre_si_invoice_view' ); ?><!DOCTYPE html>
 								<?php if ( SI_Notifications::RECORD === $data['status_type'] ) : ?>
 									<p>
 										<?php echo esc_html( $update_title ) ?>
-										<br/><a href="#TB_inline?width=600&height=380&inlineId=notification_message_<?php echo (int) $item_id ?>" id="show_notification_tb_link_<?php echo (int) $item_id ?>" class="thickbox si_tooltip notification_message" title="<?php esc_html_e( 'View Message', 'sprout-invoices' ) ?>"><?php esc_html_e( 'View Message', 'sprout-invoices' ) ?></a>
+										<br/><a href="#TB_inline?width=600&height=380&inlineId=notification_message_<?php echo (int) $item_id ?>" id="show_notification_tb_link_<?php echo (int) $item_id ?>" class="thickbox si_tooltip notification_message" title="<?php esc_attr_e( 'View Message', 'sprout-invoices' ) ?>"><?php esc_html_e( 'View Message', 'sprout-invoices' ) ?></a>
 									</p>
 									<div id="notification_message_<?php echo (int) $item_id ?>" class="cloak">
 										<?php echo wpautop( $data['content'] ) ?>
@@ -210,7 +210,7 @@ do_action( 'pre_si_invoice_view' ); ?><!DOCTYPE html>
 
 		<div id="footer_credit">
 			<?php do_action( 'si_document_footer_credit' ) ?>
-			<!--<p><?php esc_attr_e( 'Powered by Sprout Invoices', 'sprout-invoices' ) ?></p>-->
+			<!--<p><?php esc_html_e( 'Powered by Sprout Invoices', 'sprout-invoices' ) ?></p>-->
 		</div><!-- #footer_messaging -->
 		<?php wp_footer(); ?>
 	</body>

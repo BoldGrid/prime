@@ -281,7 +281,7 @@ do_action( 'pre_si_estimate_view' ); ?><!DOCTYPE html>
 
 		<div id="footer_credit">
 			<?php do_action( 'si_document_footer_credit' ) ?>
-			<!--<p><?php esc_attr_e( 'Powered by Sprout Invoices', 'sprout-invoices' ) ?></p>-->
+			<!--<p><?php esc_html_e( 'Powered by Sprout Invoices', 'sprout-invoices' ) ?></p>-->
 		</div><!-- #footer_messaging -->
 	<?php wp_footer(); ?>
 

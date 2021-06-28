@@ -13,6 +13,8 @@ The last command creates a new .zip file for a WordPress theme called `Prime` at
 
 ## Changelog
 
+### 2.8.1 ###
+Update: Change incorrect escaping functions to meet WordPress Coding Standards.
 
 ### 2.7.0 ###
 * New Feature: Header layout presets.

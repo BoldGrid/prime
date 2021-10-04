@@ -220,7 +220,7 @@ do_action( 'pre_si_estimate_view' ); ?><!DOCTYPE html>
 					<?php if ( si_is_estimate_approved() ) : ?>
 						<a class="button accept_estimate" href="javascript:void(0)"><?php _e( 'Estimate Approved', 'sprout-invoices' ) ?></a>
 					<?php else : ?>
-						<a href="#accept" class="button accept_estimate status_change" data-status-change="accept" data-id="<?php the_ID() ?>" data-nonce="<?php esc_attr_e( wp_create_nonce( SI_Controller::NONCE ) ) ?>"><?php esc_html_e( 'Accept Estimate', 'sprout-invoices' ) ?></a>
+						<a href="#accept" class="button accept_estimate status_change" data-status-change="accept" data-id="<?php the_ID() ?>" data-nonce="<?php echo esc_attr( wp_create_nonce( SI_Controller::NONCE ) ) ?>"><?php esc_html_e( 'Accept Estimate', 'sprout-invoices' ) ?></a>
 					<?php endif ?>
 
 					<?php do_action( 'si_signature_button' ) ?>

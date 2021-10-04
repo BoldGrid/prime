@@ -13,6 +13,9 @@ The last command creates a new .zip file for a WordPress theme called `Prime` at
 
 ## Changelog
 
+### 2.9.5 ###
+Bug Fix: Fix escaping in template file [#510](https://github.com/BoldGrid/boldgrid-theme-framework/issues/510)
+
 ### 2.9.0 ###
 Update: Updating Prime version number to match latest BGTFW release version
 

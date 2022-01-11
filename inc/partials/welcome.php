@@ -36,11 +36,11 @@ $crio_editor_file = 'post-and-page-builder/post-and-page-builder.php';
 		</p>
 	</div>
 
-	<div class="welcome-panel">
-		<div class="welcome-panel-content">
-			<div class="welcome-panel-column-container two-col">
+	<div class="bgtfw-welcome-panel">
+		<div class="bgtfw-welcome-panel-content">
+			<div class="bgtfw-welcome-panel-column-container two-col">
 				<?php if ( get_option( 'fresh_site' ) ) : ?>
-					<div class="welcome-panel-column">
+					<div class="bgtfw-welcome-panel-column">
 						<h2><?php esc_html_e( 'Getting Started', 'bgtfw' ); ?></h2>
 						<p>
 							<?php echo wp_kses_post( __( 'Welcome to BoldGrid Crio! In order to give you a head start editing and designing, we have provided starter content for you to customize.  You may edit any part of the content to suit your needs or delete content and pages you don\'t find valuable.  Our starter content works best with the <a href="https://wordpress.org/plugins/post-and-page-builder/" target="_blank">Post and Page Builder</a> by <a href="https://www.boldgrid.com/" target="_blank">BoldGrid</a>.', 'bgtfw' ) ); ?>
@@ -66,17 +66,17 @@ $crio_editor_file = 'post-and-page-builder/post-and-page-builder.php';
 							</p>
 						<?php endif; ?>
 					</div>
-					<div class="welcome-panel-column">
+					<div class="bgtfw-welcome-panel-column">
 						<img style="width:100%;" src="<?php echo esc_url( get_template_directory_uri() ) . '/screenshot.jpg'; ?>" />
 					</div>
 				<?php else : ?>
-					<div class="welcome-panel-column">
+					<div class="bgtfw-welcome-panel-column">
 						<h2><?php esc_html_e( 'Crio - The Theme with More', 'bgtfw' ); ?></h2>
 						<p>
 							<?php echo wp_kses_post( __( 'Welcome to BoldGrid Crio! Crio means "I Create" in Portuguese and this is our aim: To give you the most powerful site creation tools you can use! Visit <a href="https://www.BoldGrid.com/" target="_blank">BoldGrid.com</a> to learn about all the resources we offer. Be sure to install the recommended Post and Page Builder. Crio\'s unique Customizer was designed to integrate with the <a href="https://www.boldgrid.com/wordpress-page-builder-by-boldgrid/" target="_blank">Post and Page Builder</a>, so you can easily use your fonts and colors from the visual editor.', 'bgtfw' ) ); ?>
 						</p>
 					</div>
-					<div class="welcome-panel-column">
+					<div class="bgtfw-welcome-panel-column">
 						<img style="width:100%;" src="<?php echo esc_url( get_template_directory_uri() ) . '/images/welcome/bg-crio-pro.png'; ?>" />
 					</div>
 				<?php endif; ?>
@@ -84,9 +84,9 @@ $crio_editor_file = 'post-and-page-builder/post-and-page-builder.php';
 		</div>
 	</div>
 
-	<div class="welcome-panel">
-		<div class="welcome-panel-content">
-			<div class="welcome-panel-column-container">
+	<div class="bgtfw-welcome-panel">
+		<div class="bgtfw-welcome-panel-content">
+			<div class="bgtfw-welcome-panel-column-container">
 				<h2><?php esc_html_e( 'Learning Resources', 'bgtfw' ); ?></h2>
 				<div class="wrapper">
 					<div class="box a">
@@ -136,17 +136,17 @@ $crio_editor_file = 'post-and-page-builder/post-and-page-builder.php';
 		</div>
 	</div>
 	<?php if ( ! class_exists( 'Crio_Premium' ) ) : ?>
-	<div class="welcome-panel">
-		<div class="welcome-panel-content">
-			<div class="welcome-panel-column-container two-col">
-				<div class="welcome-panel-column">
+	<div class="bgtfw-welcome-panel">
+		<div class="bgtfw-welcome-panel-content">
+			<div class="bgtfw-welcome-panel-column-container two-col">
+				<div class="bgtfw-welcome-panel-column">
 					<h2><?php esc_html_e( 'Go Pro', 'bgtfw' ); ?></h2>
 					<p><?php esc_html_e( 'Looking for more? Upgrade to Crio Pro today to get over 150 additional Customizer controls, including Custom Page Headers and White Labeling options. For only $3.25 a month (billed annually) you can design your site with professional level confidence.', 'bgtfw' ); ?></p>
 					<p>
 						<a href="https://boldgrid.com/wordpress-themes/crio/?utm_source=Appearance_-_Crio&utm_medium=Button&utm_campaign=Crio_FTP&utm_content=Get_Crio_Pro" target="_blank" class="button button-primary button-hero"><?php esc_html_e( 'Get Crio Pro', 'bgtfw' ); ?></a>
 					</p>
 				</div>
-				<div class="welcome-panel-column">
+				<div class="bgtfw-welcome-panel-column">
 					<img style="width:100%;" src="<?php echo esc_url( get_template_directory_uri() ) . '/images/welcome/custom-page-headers.png'; ?>" />
 				</div>
 			</div>

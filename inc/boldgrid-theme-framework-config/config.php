@@ -499,8 +499,8 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 		$config['customizer-options']['colors']['dark_text'] = '#333333';
 
 		// Button Classes
-		$config['components']['buttons']['variables']['button-primary-classes'] = '.btn, .btn-color-1';
-		$config['components']['buttons']['variables']['button-secondary-classes'] = '.btn, .btn-color-2';
+		$config['components']['buttons']['variables']['button-primary-classes'] = '.btn, .btn-color-1, .button-primary';
+		$config['components']['buttons']['variables']['button-secondary-classes'] = '.btn, .btn-color-2, .button-secondary';
 
 		// Set all pages to be in a container by default.
 		$config['customizer']['controls']['bgtfw_pages_container']['default'] = 'container';

@@ -2,42 +2,66 @@
 	width: 20px;
 }
 
-.welcome-panel-column .crio-welcome-button.button.button-hero {
+.bgtfw-welcome-panel-column .crio-welcome-button.button.button-hero {
   display: block;
   text-align: center;
   margin: 2em 0;
 }
-.welcome-panel-column-container .learning-item {
+.bgtfw-welcome-panel-column-container .learning-item {
   display: grid;
   grid-template-columns: 79px 1fr;
   grid-gap: 10px;
   align-items: flex-start;
 }
 
-.welcome-panel-column-container .learning-item .learning-image {
+.bgtfw-welcome-panel-column-container .learning-item .learning-image {
   margin: 1.33em 0 0;
 }
 
-.welcome-panel {
+.bgcrio-about-wrap .bgtfw-welcome-panel {
     padding: 30px 10px;
 }
 
-.welcome-panel-content {
-  margin-right: 13px;
+.bgcrio-about-wrap .bgtfw-welcome-panel {
+	position: relative;
+    overflow: auto;
+    margin: 16px 0;
+    border: 1px solid #c3c4c7;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 4%);
+    background: #fff;
+    font-size: 13px;
+    line-height: 1.7;
 }
 
-.welcome-panel-column-container .wrapper {
+.bgcrio-about-wrap .bgtfw-welcome-panel h2 {
+	margin: 0;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.bgtfw-welcome-panel-content {
+  margin-right: 13px;
+  margin-left: 13px;
+  max-width: 1500px;
+}
+
+.bgtfw-welcome-panel-content {
+	margin-top: 1em;
+}
+
+.bgtfw-welcome-panel-column-container .wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 10px;
   background-color: #fff;
 }
-.welcome-panel-column-container .wrapper p.box {
+.bgtfw-welcome-panel-column-container .wrapper p.box {
   margin-top: 0;
   margin-left: 89px; /* 79px image grid width + 10px grid padding. */
 }
 
-.welcome-panel-column-container .box {
+.bgtfw-welcome-panel-column-container .box {
   border-radius: 5px;
   padding: 0 20px;
 }
@@ -71,16 +95,24 @@
   margin-top: 0px;
 }
 
-.welcome-panel-column h2 {
-  text-align: left;
+.bgtfw-welcome-panel-column h2 {
+	text-align: left;
+	margin: 0;
+	font-size: 21px;
+	font-weight: 400;
+	line-height: 1.2;
 }
 
-.bgcrio-about-wrap .welcome-panel .two-col .welcome-panel-column:first-of-type {
+.bgcrio-about-wrap .bgtfw-welcome-panel .two-col .bgtfw-welcome-panel-column {
+	float: left;
+}
+
+.bgcrio-about-wrap .bgtfw-welcome-panel .two-col .bgtfw-welcome-panel-column:first-of-type {
   width: calc( 50% - 15px);
   padding-right: 15px;
 }
 
-.bgcrio-about-wrap .welcome-panel .two-col .welcome-panel-column:nth-of-type(2) {
+.bgcrio-about-wrap .bgtfw-welcome-panel .two-col .bgtfw-welcome-panel-column:nth-of-type(2) {
   width: 50%;
 }
 
@@ -92,7 +124,7 @@
   text-align: left;
 }
 
-.bgcrio-about-wrap .four-col .welcome-panel-column {
+.bgcrio-about-wrap .four-col .bgtfw-welcome-panel-column {
   min-width: unset;
   width: 21%;
   padding: 2%;
@@ -105,7 +137,7 @@
   display: inline-block;
 }
 
-.welcome-panel > .welcome-panel-content:not(:first-child) {
+.bgtfw-welcome-panel > .bgtfw-welcome-panel-content:not(:first-child) {
   margin-top: 15px;
 }
 
@@ -302,11 +334,11 @@ p#boldgrid_api_key_notice_message {
 }
 
 @media only screen and (max-width: 782px) {
-  .bgcrio-about-wrap .four-col .welcome-panel-column {
+  .bgcrio-about-wrap .four-col .bgtfw-welcome-panel-column {
     width: 46%;
   }
-  div.bgcrio-about-wrap .welcome-panel .two-col .welcome-panel-column:first-of-type,
-  div.bgcrio-about-wrap .welcome-panel .two-col .welcome-panel-column:nth-of-type(2) {
+  div.bgcrio-about-wrap .bgtfw-welcome-panel .two-col .bgtfw-welcome-panel-column:first-of-type,
+  div.bgcrio-about-wrap .bgtfw-welcome-panel .two-col .bgtfw-welcome-panel-column:nth-of-type(2) {
     width: 100%;
     padding: inherit;
   }
@@ -327,12 +359,12 @@ p#boldgrid_api_key_notice_message {
     margin-top: 15px;
     margin-bottom: -20px;
   }
-  div.bgcrio-about-wrap .welcome-panel .two-col .welcome-panel-column:first-of-type,
-  div.bgcrio-about-wrap .welcome-panel .two-col .welcome-panel-column:nth-of-type(2) {
+  div.bgcrio-about-wrap .bgtfw-welcome-panel .two-col .bgtfw-welcome-panel-column:first-of-type,
+  div.bgcrio-about-wrap .bgtfw-welcome-panel .two-col .bgtfw-welcome-panel-column:nth-of-type(2) {
     width: 100%;
     padding: inherit;
   }
-  .bgcrio-about-wrap .four-col .welcome-panel-column {
+  .bgcrio-about-wrap .four-col .bgtfw-welcome-panel-column {
     width: 100%;
   }
   .bgcrio-about-wrap .four-col img {

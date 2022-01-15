@@ -23,7 +23,7 @@
     "got": "^9.6.0",
     "pkg-dir": "^3.0.0",
     "recursive-copy": "^2.0.10",
-    "shelljs": "^0.8.3",
+    "shelljs": "^0.8.5",
     "unzip-stream": "^0.3.0",
     "wp-header-update": "^1.0.1",
     "wp-pot": "^1.6.6",

@@ -40,7 +40,18 @@ $has_sticky_template = get_the_ID() === $has_sticky_template ? false : $has_stic
 	} else {
 		get_template_part( 'templates/head' );
 	?>
-	<body <?php body_class(); ?>>
+	<body <?php body_class(); ?> <?php
+			$container_type = apply_filters( 'bgtfw_get_container_type', $post );
+			error_log( 'container_type: ' . json_encode( $container_type ) );
+			echo ( ! empty( $container_type ) && $post !== $container_type ? 'data-container="' . esc_attr( $container_type ) . '"' : '' );
+
+			$max_width_attributes = apply_filters( 'bgtfw_get_max_width', $post );
+			if ( ! empty( $max_width_attributes ) && $post !== $max_width_attributes ) {
+				foreach( $max_width_attributes as $attribute => $value ) {
+					echo ' data-' . esc_attr( $attribute ) . '="' . esc_attr( $value ) . '"';
+				}
+			}
+		?>>
 		<?php
 			// Invoking core hook for plugins to hook first in place on the body content. Ref: https://core.trac.wordpress.org/ticket/46679.
 			do_action( 'wp_body_open' ); // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound

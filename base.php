@@ -44,7 +44,6 @@ if ( $is_sa_invoice ) {
 	<?php
 	body_class();
 	$container_type = apply_filters( 'bgtfw_get_container_type', $post );
-	error_log( 'container_type: ' . json_encode( $container_type ) );
 	echo ( ! empty( $container_type ) && $post !== $container_type ? 'data-container="' . esc_attr( $container_type ) . '"' : '' );
 
 	$max_width_attributes = apply_filters( 'bgtfw_get_max_width', $post );

@@ -7,7 +7,7 @@
  * @package Prime
  */
 
-$has_featured_image_header = has_post_thumbnail( get_option( 'page_for_posts', true ) ) &&
+$has_featured_image_header = has_post_thumbnail( $post->ID ) &&
 	'show' === get_theme_mod( 'bgtfw_post_header_feat_image_display' ) &&
 	'background' === get_theme_mod( 'bgtfw_post_header_feat_image_position' );
 

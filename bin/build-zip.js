@@ -40,10 +40,11 @@ const themeDir = path.resolve( __dirname, '..' );
 // New textdomain.
 const domain = args[0];
 const version = args[1];
+const localBgtfw = args[2] && 'local' === args[2] ? true : false;
 const themeName = domain.charAt( 0 ).toUpperCase() + domain.slice( 1 );
 const tempDir = `../${ domain }-zip-building/${ domain }`;
 
-getBGTFW().then( () => {
+getBGTFW( localBgtfw ).then( () => {
 	rimraf( path.resolve( tempDir, '..' ), () => {
 		let options = {
 			overwrite: true,

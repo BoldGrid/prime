@@ -2,7 +2,8 @@ const got = require( 'got' ),
 	unzip = require( 'unzip-stream' ),
 	pkgDir = require( 'pkg-dir' );
 
-module.exports = async () => {
+module.exports = async ( localBgtfw ) => {
+	console.log( { localBgtfw } );
 	const rootDir = await pkgDir( __dirname );
 	return new Promise( (resolve, reject) => {
 		got.stream( 'https://github.com/BoldGrid/boldgrid-theme-framework/releases/latest/download/bgtfw.zip' )

@@ -11,8 +11,8 @@
 global $boldgrid_theme_framework;
 global $post;
 
-if ( ! empty( $post ) ) {
-	$is_sa_invoice  = 'sa_invoice' === $post->post_type;
+if ( ! empty( $post ) && class_exists( 'SI_Invoice' ) ) {
+	$is_sa_invoice  = SI_Invoice::is_invoice_query();
 	$is_sa_estimate = 'sa_estimate' === $post->post_type;
 } else {
 	$is_sa_invoice  = false;
@@ -33,10 +33,12 @@ $has_sticky_template = get_the_ID() === $has_sticky_template ? false : $has_stic
 <!-- BGTFW Version: <?php echo esc_html( $bgtfw_configs['framework-version'] ); ?> -->
 <html <?php language_attributes(); ?>>
 <?php
-if ( $is_sa_invoice ) {
-	get_template_part( 'sa_templates/invoice' );
-} elseif ( $is_sa_estimate ) {
-	get_template_part( 'sa_templates/estimate' );
+if ( $is_sa_estimate ) {
+	$template = SI_Templating_API::override_template( 'estimate' );
+	load_template( $template );
+} elseif ( $is_sa_invoice ) {
+	$template = SI_Templating_API::override_template( 'invoice' );
+	load_template( $template );
 } else {
 	get_template_part( 'templates/head' );
 	?>

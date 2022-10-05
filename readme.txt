@@ -3,8 +3,8 @@ Contributors: boldgrid, timph, rramo012, bgnicolepaschen, joemoto, imh_brad, jam
 Tags: news, blog, e-commerce, sticky-post, theme-options, threaded-comments, full-width-template, footer-widgets, featured-images, flexible-header, custom-header, custom-logo, custom-background, custom-colors, custom-menu, editor-style, translation-ready, left-sidebar, right-sidebar, grid-layout, one-column, two-columns, three-columns, four-columns
 Requires PHP: 5.6
 Requires at least: 4.8
-Tested up to: 6.0
-Stable tag: 2.11.0
+Tested up to: 6.1
+Stable tag: 2.17.1
 License: GPL-3.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-3.0-standalone.html
 

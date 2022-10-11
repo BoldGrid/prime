@@ -1,6 +1,6 @@
 # prime
 
-- Contributors: rramo012, timph
+- Contributors: rramo012, timph, jamesros161
 - Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-layout, rtl-language-support, translation-ready
 - Requires at least: 4.4
 - Tested up to: 5.3
@@ -11,6 +11,15 @@
 Prime is a BoldGrid Parent Theme used to create new child themes for use in the BoldGrid system.  This theme utilizes the [BoldGrid Theme Framework](https://github.com/boldgrid/boldgrid-theme-framework).
 
 ## Changelog
+
+### 1.5.10 ###
+* Update: Applied WooCommerce template updates.
+
+### 1.5.9 ###
+* Update: Add template conditionals for Sprout Estimates.
+
+### 1.5.8 ###
+* Update: Add template conditionals for Sprout Invoices.
 
 ### 1.5.5 ###
 * Bug Fix: Fixing issue with grouped products.

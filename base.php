@@ -28,6 +28,7 @@ $template_has_title  = get_post_meta( $has_header_template, 'crio-premium-templa
 $has_sticky_template = apply_filters( 'crio_premium_get_sticky_page_header', get_the_ID() );
 $has_sticky_template = get_the_ID() === $has_sticky_template ? false : $has_sticky_template;
 
+if ( ! isset( $_REQUEST[ 'pdf' ] ) && ! isset( $_REQUEST[ 'genpdf'] ) ) {
 ?>
 <!doctype html>
 <!-- BGTFW Version: <?php echo esc_html( $bgtfw_configs['framework-version'] ); ?> -->
@@ -114,3 +115,11 @@ if ( $is_sa_estimate ) {
 	</body>
 				<?php } ?>
 </html>
+<?php } elseif ( $is_sa_estimate ) {
+	$template = SI_Templating_API::override_template( 'estimate' );
+	load_template( $template );
+} elseif ( $is_sa_invoice ) {
+	$template = SI_Templating_API::override_template( 'invoice' );
+	load_template( $template );
+}
+?>

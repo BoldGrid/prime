@@ -11,7 +11,6 @@
 global $boldgrid_theme_framework;
 
 $bgtfw_configs = $boldgrid_theme_framework->get_configs();
-error_log( 'si-estimate-base loaded' );
 
 ?>
 <!doctype html>

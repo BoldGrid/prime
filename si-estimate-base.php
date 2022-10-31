@@ -8,16 +8,7 @@
  * @package Prime
  */
 
-global $boldgrid_theme_framework;
-
-$bgtfw_configs = $boldgrid_theme_framework->get_configs();
-
-?>
-<!doctype html>
-<!-- BGTFW Version: <?php echo esc_html( $bgtfw_configs['framework-version'] ); ?> -->
-<html <?php language_attributes(); ?>>
-<?php
-	$template = SI_Templating_API::override_template( 'estimate' );
-	load_template( $template );
+$template = SI_Templating_API::override_template( 'estimate' );
+load_template( $template );
 ?>
 </html>

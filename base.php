@@ -11,14 +11,6 @@
 global $boldgrid_theme_framework;
 global $post;
 
-if ( ! empty( $post ) && class_exists( 'SI_Invoice' ) ) {
-	$is_sa_invoice  = SI_Invoice::is_invoice_query();
-	$is_sa_estimate = 'sa_estimate' === $post->post_type;
-} else {
-	$is_sa_invoice  = false;
-	$is_sa_estimate = false;
-}
-
 $bgtfw_configs = $boldgrid_theme_framework->get_configs();
 
 $has_header_template = apply_filters( 'crio_premium_get_page_header', get_the_ID() );
@@ -28,21 +20,13 @@ $template_has_title  = get_post_meta( $has_header_template, 'crio-premium-templa
 $has_sticky_template = apply_filters( 'crio_premium_get_sticky_page_header', get_the_ID() );
 $has_sticky_template = get_the_ID() === $has_sticky_template ? false : $has_sticky_template;
 
-if ( ! isset( $_REQUEST[ 'pdf' ] ) && ! isset( $_REQUEST[ 'genpdf'] ) ) {
 ?>
 <!doctype html>
 <!-- BGTFW Version: <?php echo esc_html( $bgtfw_configs['framework-version'] ); ?> -->
 <html <?php language_attributes(); ?>>
 <?php
-if ( $is_sa_estimate ) {
-	$template = SI_Templating_API::override_template( 'estimate' );
-	load_template( $template );
-} elseif ( $is_sa_invoice ) {
-	$template = SI_Templating_API::override_template( 'invoice' );
-	load_template( $template );
-} else {
 	get_template_part( 'templates/head' );
-	?>
+?>
 	<body
 	<?php
 	body_class();
@@ -113,13 +97,4 @@ if ( $is_sa_estimate ) {
 		<?php wp_footer(); ?>
 		<?php do_action( 'boldgrid_footer_after' ); ?>
 	</body>
-				<?php } ?>
 </html>
-<?php } elseif ( $is_sa_estimate ) {
-	$template = SI_Templating_API::override_template( 'estimate' );
-	load_template( $template );
-} elseif ( $is_sa_invoice ) {
-	$template = SI_Templating_API::override_template( 'invoice' );
-	load_template( $template );
-}
-?>

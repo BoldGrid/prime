@@ -10,4 +10,3 @@
 
 $template = SI_Templating_API::override_template( 'estimate' );
 load_template( $template );
-?>

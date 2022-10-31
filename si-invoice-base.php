@@ -11,4 +11,3 @@
 $template = SI_Templating_API::override_template( 'invoice' );
 load_template( $template );
 ?>
-</html>

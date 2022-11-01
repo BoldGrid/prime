@@ -3,6 +3,9 @@
  * File: pdf.php
  *
  * This file is used when sprout invoices generates a pdf.
+ *
+ * @since 2.0
+ * @package Prime
  */
 global $post;
 

@@ -32,6 +32,7 @@ do_action( 'woocommerce_before_account_orders', $has_orders ); ?>
 				<?php endforeach; ?>
 			</tr>
 		</thead>
+
 		<tbody>
 			<?php
 			foreach ( $customer_orders->orders as $customer_order ) {
@@ -102,7 +103,6 @@ do_action( 'woocommerce_before_account_orders', $has_orders ); ?>
 		</a>
 		<?php esc_html_e( 'No order has been made yet.', 'woocommerce' ); ?>
 	</div>
-
 <?php endif; ?>
 
 <?php do_action( 'woocommerce_after_account_orders', $has_orders ); ?>

@@ -24,8 +24,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 <form role="search" class="form-inline woocommerce-product-search" method="get" id="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
 	<div class="form-group">
-		<label class="screen-reader-text" for="woocommerce-product-search-field-<?php echo isset( $index ) ? absint( $index ) : 0; ?>"><?php esc_html_e( 'Search for:', 'crio' ); ?></label>
-		<input type="search" id="woocommerce-product-search-field-<?php echo isset( $index ) ? absint( $index ) : 0; ?>" class="search-field form-control" placeholder="<?php echo esc_attr__( 'Search products&hellip;', 'crio' ); ?>" value="<?php echo get_search_query(); ?>" name="s" />
+		<label class="screen-reader-text" for="woocommerce-product-search-field-<?php echo isset( $index ) ? absint( $index ) : 0; ?>"><?php esc_html_e( 'Search for:', 'woocommerce' ); ?></label>
+		<input type="search" id="woocommerce-product-search-field-<?php echo isset( $index ) ? absint( $index ) : 0; ?>" class="search-field form-control" placeholder="<?php echo esc_attr__( 'Search products&hellip;', 'woocommerce' ); ?>" value="<?php echo get_search_query(); ?>" name="s" />
 	</div>
-	<button type="submit" class="button-primary"><span class="fa fa-search"></span><span>&nbsp;<?php echo esc_attr_x( 'Search', 'submit button', 'crio' ); ?></span></button>
+	<button type="submit" class="button-primary"><span class="fa fa-search"></span><span>&nbsp;<?php echo esc_attr_x( 'Search', 'submit button', 'woocommerce' ); ?></span></button>
 	<input type="hidden" name="post_type" value="product" />
+</form>

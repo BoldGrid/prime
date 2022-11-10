@@ -16,23 +16,23 @@
  * @version 7.0.1
  */
 
-defined('ABSPATH') || exit;
+defined( 'ABSPATH' ) || exit;
 
-$product_url_parts = wp_parse_url($product_url);
+$product_url_parts = wp_parse_url( $product_url );
 $query_string      = array();
 
-if (!empty($product_url_parts['query'])) {
-	parse_str($product_url_parts['query'], $query_string);
+if ( ! empty( $product_url_parts['query'] ) ) {
+	parse_str( $product_url_parts['query'], $query_string );
 }
 
-do_action('woocommerce_before_add_to_cart_form'); ?>
+do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 
-<form class="cart" action="<?php echo esc_url($product_url); ?>" method="get">
-	<?php do_action('woocommerce_before_add_to_cart_button'); ?>
+<form class="cart" action="<?php echo esc_url( $product_url ); ?>" method="get">
+	<?php do_action( 'woocommerce_before_add_to_cart_button' ); ?>
 
-	<button type="submit" class="single_add_to_cart_button btn button-primary"><?php echo esc_html($button_text); ?></button>
+	<button type="submit" class="single_add_to_cart_button btn button-primary"><?php echo esc_html( $button_text ); ?></button>
 
-	<?php wc_query_string_form_fields($query_string); ?>
+	<?php wc_query_string_form_fields( $query_string ); ?>
 
-	<?php do_action('woocommerce_after_add_to_cart_button'); ?>
+	<?php do_action( 'woocommerce_after_add_to_cart_button' ); ?>
 </form>

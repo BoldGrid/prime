@@ -13,6 +13,9 @@ The last command creates a new .zip file for a WordPress theme called `Prime` at
 
 ## Changelog
 
+### 2.17.3 ###
+* Update: Updated all WooCommerce Templates [#148](https://github.com/BoldGrid/prime/issues/148)
+
 ### 2.11.0 ###
 * New Feature: Added responsive font size controls for Body Font, Headings and Site Title[#84](https://github.com/BoldGrid/boldgrid-theme-framework/issues/84)
 * New Feature: Added support for new Sticky Header template and Footer Template features in Crio Pro 1.5.0[#544](https://github.com/BoldGrid/boldgrid-theme-framework/pull/544)

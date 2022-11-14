@@ -56,7 +56,7 @@ $boldgrid_link = apply_filters(
 	'<a href="https://www.BoldGrid.com/" target="_blank">BoldGrid.com</a>'
 );
 
-// Filters the 'Boldgrid.com' Post and Page Builder link in the main panel of the Welcome page.
+// Filters the 'Post and Page Builder' link in the main panel of the Welcome page.
 $boldgrid_ppb_link = apply_filters(
 	'crio_welcome_boldgrid_ppb_link',
 	'<a href="https://www.boldgrid.com/wordpress-page-builder-by-boldgrid/" target="_blank">Post and Page Builder</a>'

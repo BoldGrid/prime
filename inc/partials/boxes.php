@@ -5,8 +5,8 @@
  * @package Prime
  * @since 2.0.0
  */
-
-$box_a = '<div class="box-container box a">' .
+return array(
+	'docs_and_tutorials' => '<div class="box-container box a">' .
 '<div class="learning-item">' .
 	'<div class="learning-image">' .
 		'<svg version="1.2" preserveAspectRatio="none" viewBox="0 0 24 24" class="ng-element" style="opacity: 1; mix-blend-mode: normal; fill: rgb(249, 91, 38); width: 79px; height: 79px;">' .
@@ -23,9 +23,9 @@ $box_a = '<div class="box-container box a">' .
 '<p class="box">' .
 	'<a href="http://boldgrid.com/support/boldgrid-crio" target="_blank" class="button button-secondary">' . esc_html__( 'Browse Docs', 'bgtfw' ) . '</a>' .
 '</p>' .
-'</div>';
+'</div>',
 
-$box_b = '<div class="box-container box b">' .
+'one_on_one_support' => '<div class="box-container box b">' .
 	'<div class="learning-item">' .
 		'<div class="learning-image">' .
 			'<svg version="1.2" preserveAspectRatio="none" viewBox="0 0 24 24" class="ng-element" style="opacity: 1; mix-blend-mode: normal; fill: rgb(249, 91, 38); width: 79px; height: 79px;">' .
@@ -42,9 +42,9 @@ $box_b = '<div class="box-container box b">' .
 	'<p class="box">' .
 		'<a href="https://www.boldgrid.com/central/account/help/premium" target="_blank" class="button button-secondary">' . esc_html__( 'Get Support', 'bgtfw' ) . '</a>' .
 	'</p>' .
-'</div>';
+'</div>',
 
-$box_c = '<div class="box-container box c">' .
+'team_orange' => '<div class="box-container box c">' .
 	'<div class="learning-item">' .
 		'<div class="learning-image">' .
 			'<svg version="1.2" preserveAspectRatio="none" viewBox="0 0 24 24" class="ng-element" style="opacity: 1; mix-blend-mode: normal; fill: rgb(249, 91, 38); width: 82px; height: 82px;">' .
@@ -61,10 +61,5 @@ $box_c = '<div class="box-container box c">' .
 	'<p class="box">' .
 		'<a href="https://www.facebook.com/groups/BGTeamOrange" target="_blank" class="button button-secondary">' . esc_html__( 'Join Us', 'bgtfw' ) . '</a>' .
 	'</p>' .
-'</div>';
-
-return array(
-	'docs_and_tutorials' => $box_a,
-	'one_on_one_support' => $box_b,
-	'team_orage'         => $box_c,
+'</div>',
 );

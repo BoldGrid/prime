@@ -15,6 +15,7 @@ The last command creates a new .zip file for a WordPress theme called `Prime` at
 
 ### 2.17.3 ###
 * Update: Updated all WooCommerce Templates [#148](https://github.com/BoldGrid/prime/issues/148)
+* Update: Add additional filters to support and upsell URLS
 
 ### 2.11.0 ###
 * New Feature: Added responsive font size controls for Body Font, Headings and Site Title[#84](https://github.com/BoldGrid/boldgrid-theme-framework/issues/84)

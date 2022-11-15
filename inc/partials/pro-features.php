@@ -15,7 +15,10 @@ if ( ! defined( 'WPINC' ) ) {
  * it's function is defined in the class
  * Boldgrid_Framework_Pro_Feature_Cards.
  */
-$go_pro_url = apply_filters( 'bgtfw_upgrade_url_pro_features', 'upgrade_url' );
+$go_pro_url = apply_filters(
+	'bgtfw_upgrade_url_pro_features',
+	'https://boldgrid.com/wordpress-themes/crio/?utm_source=Crio_-_Pro_Features&utm_medium=Button&utm_campaign=Crio_Pro_Features'
+);
 
 ?>
 

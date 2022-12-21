@@ -30,7 +30,7 @@ $go_pro_url = apply_filters(
 		</p>
 	</div>
 	<div class="pro-feature-image">
-		<img src="<?php echo esc_url( get_template_directory_uri() ) . '/images/welcome/custom-page-headers.png'; ?>"></img>
+		<img src="<?php echo esc_url( get_template_directory_uri() ) . '/images/welcome/custom-page-headers.webp'; ?>"></img>
 		<div class="cta">
 			<h2 class="cta-heading">Crio Pro</h2>
 			<a class="cta-button" href="<?php echo esc_url( $go_pro_url ); ?>&utm_content=Go_Pro " target="_blank">Go Pro</a>

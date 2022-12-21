@@ -155,7 +155,7 @@ $crio_editor_file    = 'post-and-page-builder/post-and-page-builder.php';
 						</p>
 					</div>
 					<div class="bgtfw-welcome-panel-column">
-						<img style="width:100%;" src="<?php echo esc_url( get_template_directory_uri() ) . '/images/welcome/bg-crio-pro.png'; ?>" />
+						<img style="width:100%;" src="<?php echo esc_url( get_template_directory_uri() ) . '/images/welcome/bg-crio-pro.webp'; ?>" />
 					</div>
 				<?php endif; ?>
 			</div>
@@ -184,7 +184,7 @@ $crio_editor_file    = 'post-and-page-builder/post-and-page-builder.php';
 					</p>
 				</div>
 				<div class="bgtfw-welcome-panel-column">
-					<img style="width:100%;" src="<?php echo esc_url( get_template_directory_uri() ) . '/images/welcome/custom-page-headers.png'; ?>" />
+					<img style="width:100%;" src="<?php echo esc_url( get_template_directory_uri() ) . '/images/welcome/custom-page-headers.webp'; ?>" />
 				</div>
 			</div>
 		</div>

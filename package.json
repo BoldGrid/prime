@@ -28,6 +28,6 @@
     "wp-header-update": "^1.0.1",
     "wp-pot": "^1.6.6",
 	"wp-textdomain": "^1.0.1",
-	"minimist": "^0.2.1"
+	"minimist": "^0.2.4"
   }
 }
